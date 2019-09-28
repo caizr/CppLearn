@@ -44,6 +44,7 @@ int main(){
 	const int v2 = 4;	//
 	const int *p2 = &v2;	//等号左边，从右往左，就好理解
 				//pointer to const
+	p2 = &v1;		//合法，指针本身不是常量
 	int v3 = 5;
 	const int *p3 = &v3;
 // 	*p3 = 7;		//非法，因为指向常量的指针无法
