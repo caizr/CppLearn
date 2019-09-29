@@ -1,2 +1,3 @@
-This is my repo
-hehe
+这是我学习c++ primer, 5th所记录的笔记
+每一章创建了一个目录以及对应章节的问题
+记录在里面。
