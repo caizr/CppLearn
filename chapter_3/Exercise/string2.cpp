@@ -13,8 +13,8 @@ int main(){
 	getline(cin,s3);//读取一整行，包括空格在内
 
 	/* string的比较: <,>,<=,>=,!= */
-	string s4 = "hello world";
-	string s5 = "hello";
-	cout<<s4<=s5;
+	string s4 = "abc hijk";
+	string s5 = "defg";
+	cout<<(s4>s5);
 	return 0;
 }
