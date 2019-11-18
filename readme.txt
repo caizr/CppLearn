@@ -6,4 +6,5 @@ caizr
 索引：
 chapter_2: reference, const, pointer以及const和pointer组合, auto
 chapter_3: string, vector, 迭代器, 数组以及指针结合，多维数组*
+chapter_4: 算术运算及其优先级，size(of)，类型转换
 
