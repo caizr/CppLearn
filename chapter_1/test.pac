@@ -4,7 +4,6 @@
 var proxy = "__PROXY__";
 
 var rules = [
-  "||baidu.com/",
   "|http://85.17.73.31/",
   "||agnesb.fr",
   "||akiba-web.com",
