@@ -53,7 +53,4 @@ int main(){
         continue;
     }
     cout<<"manner 3:"<<vowelCnt<<endl;
-    char s2;
-    while(cin>>c2);
-    cout<<c2<<endl;
 }
