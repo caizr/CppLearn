@@ -9,6 +9,9 @@ int main(){
     while(cin>>s1){
         if (s1==s1_copy)
             ++count;
+        else if (s1 != s1_copy)
+            cout<<"no"<<endl;
         s1_copy=s1;         //记录上一个输入的英文单词
-    cout<<count<<endl;
+    }
+    cout<<count<<endl;    
 }
