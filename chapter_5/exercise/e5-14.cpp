@@ -6,12 +6,10 @@ int main(){
     cout<<"type a string"<<endl;
     string s1_copy;
     int count=1;
-    while(cin>>s1){
+    while(cin>>s1){         //只能统计一次，如果后面有另外的单词重复，会计算错误
         if (s1==s1_copy)
             ++count;
-        else if (s1 != s1_copy)
-            cout<<"no"<<endl;
-        s1_copy=s1;         //记录上一个输入的英文单词
+        s1_copy = s1;
     }
     cout<<count<<endl;    
 }
