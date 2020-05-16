@@ -1,4 +1,5 @@
 /* switch 语句 */
+/**/
 #include<iostream>
 using namespace std;
 int main(){
