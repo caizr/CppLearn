@@ -9,8 +9,30 @@ caizr
 需要加强理解的部分: auto
 索引：
 chapter_2: reference, const, pointer以及const和pointer组合, auto
+chapter_2 NOTICE:
+            顶层const和底层const:
+            /* 顶层const: i1的值不能被修改 */
+            const int i1=1; 
+
+            /* 底层const: 等价于int const *p */
+            /* &p不能被修改，p能够被修改 */
+            const int *p1 = &i1; 
+
+            /* 顶层const: p2不能被修改 */
+            int * const p2= &i1;
+
+            
 chapter_3: string, vector, 迭代器, 数组以及指针结合，多维数组*
 chapter_4: 算术运算及其优先级，size(of)，类型转换
 chapter_5: E5-14残次品，只能统计一次
-chapter_6: 函数声明，分离式编译
+chapter_6: 函数声明，分离式编译，行参和实参，const行参和实参
+chapter_6 NOTICE:
+            注意引用传参和指针传参，
+            指针传参仍然可以更改指针的值，此时行参仍然为拷贝，只不过
+            指向的都是同一个地址。
+            注意c++11之后建议使用 const char *而非char *
+            建议使用引用传参的时候，如果不会更改参数的值，在定义的时候
+            加上const修饰，防止参数的值以外被改变。使用引用传参能够节省
+            内存空间，尤其的参数占用很大内存的时候
+            
 
