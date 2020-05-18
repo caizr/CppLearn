@@ -43,6 +43,7 @@ chapter_3 NOTICE
 chapter_4: 算术运算及其优先级，size(of)，类型转换
 chapter_5: E5-14残次品，只能统计一次
 chapter_6: 函数声明，分离式编译，行参和实参，const行参和实参，数组行参
+           main函数参数
 chapter_6 NOTICE:
             注意引用传参和指针传参，
             指针传参仍然可以更改指针的值，此时行参仍然为拷贝，只不过
@@ -56,4 +57,10 @@ chapter_6 NOTICE:
             2. 标准库方式      while(beg!=end) +beg++
             3. 显示传递        size=end-beg; for(size_t i=0; i!=size; ++i)
 
+            /* main函数传参*/
+            int main(int argc,int **argv);
+            //调程序的时候 ./xxx p1 p2
+            //此时argv[0]="./xxx",
+            //argv[1]="p1",argv[2]="p2"
+            //argc=3
 
