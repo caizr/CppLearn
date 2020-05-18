@@ -1,6 +1,7 @@
 /* 判断string对象是否有大写字母，并把string对象全部改成小写形式 */
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
 
 void ToLow(string &s){
@@ -10,7 +11,7 @@ void ToLow(string &s){
         // 答案用的是 auto c:s
         if(c>='A' && c<='Z')
             s[i]+=32;
-        else if(c>='a'&& c<='z' || c==' ')
+        else if((c>='a'&& c<='z' )|| c==' ')
             ;//暂时不做任何处理
         else
             s[i]='?';
