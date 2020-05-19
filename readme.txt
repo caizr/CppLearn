@@ -43,7 +43,8 @@ chapter_3 NOTICE
 chapter_4: 算术运算及其优先级，size(of)，类型转换
 chapter_5: E5-14残次品，只能统计一次
 chapter_6: 函数声明，分离式编译，行参和实参，const行参和实参，数组行参
-           main函数参数，可变参数（c函数交互）
+           main函数参数，可变参数（省略符形参没怎么看和理解),函数返回引用
+           返回vector
 chapter_6 NOTICE:
             注意引用传参和指针传参，
             指针传参仍然可以更改指针的值，此时行参仍然为拷贝，只不过
@@ -64,3 +65,11 @@ chapter_6 NOTICE:
             //argv[1]="p1",argv[2]="p2"
             //argc=3
 
+            /* 函数返回引用 */
+            //返回引用的时候，不会先复制再返回，而是返回对象本身
+            string &get_val(string &s, int x){
+                return s[x];
+            }
+            //调用
+            string s1="a value";
+            get_val(s1,0)='A';   //s1现在为"A value"
