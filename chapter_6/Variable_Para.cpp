@@ -11,9 +11,9 @@ int main(){
     return 0;
 }
 /* 实例： 输出错误信息的函数 */
-void error_msg(initializer_list<string> iî){
+void error_msg(initializer_list<string> i1){
     for(auto beg=i1.begin();beg!=i1.end();++beg){
         cout<< *beg<<" ";
     }
-    couot<<endl;
+    cout<<endl;
 }
