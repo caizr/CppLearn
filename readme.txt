@@ -1,11 +1,9 @@
 caizr
 这是我学习c++ primer, 5th所记录的笔记每一章创建了一个目录以及对应章节的问题记录在里面。
 未理解的页码: P61
-<<<<<<< HEAD
+
 跳过/未解决的代码: P100二分法, Chapter4一开始的rvalue和lvalue
-=======
-跳过/未解决的代码: P100二分法，P115附近的多维数组+指针的组合应用
->>>>>>> a242be7337ec6d38104756a0c9fee4dcbdaf3d5a
+
 需要加强理解的部分: auto
 索引：
 chapter_2: reference, const, pointer以及const和pointer组合, auto
@@ -44,8 +42,12 @@ chapter_4: 算术运算及其优先级，size(of)，类型转换
 chapter_5: E5-14残次品，只能统计一次
 chapter_6: 函数声明，分离式编译，行参和实参，const行参和实参，数组行参
            main函数参数，可变参数（省略符形参没怎么看和理解),函数返回引用
+
            返回vector；函数指针（跳过）；函数重载（感觉会，跳过）；默认实参；
            内联函数；constexpr（感觉有点花里胡哨，暂时跳过)
+           返回vector
+           函数指针
+
 chapter_6 NOTICE:
             注意引用传参和指针传参，
             指针传参仍然可以更改指针的值，此时行参仍然为拷贝，只不过
@@ -74,3 +76,6 @@ chapter_6 NOTICE:
             //调用
             string s1="a value";
             get_val(s1,0)='A';   //s1现在为"A value"
+
+            /* 函数指针作为形参 */
+            虽然函数不能作为参数，但是可以通过函数指针来实现功能
