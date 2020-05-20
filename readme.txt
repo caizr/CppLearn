@@ -80,7 +80,7 @@ chapter_6 NOTICE:
             /* 函数指针作为形参 */
             虽然函数不能作为参数，但是可以通过函数指针来实现功能
 
-chapter_7:  const成员函数，
+chapter_7:  const成员函数，构造函数
 
 chapter_7 NOTICE:
             /* const成员函数 */
@@ -91,4 +91,9 @@ chapter_7 NOTICE:
             string isbn(const Sales_data * const this){
                 return this->isbn;
             }
+
+            /* 构造函数 */
+            1. 构造函数可以重载
+            2. 默认构造函数
+            3. 构造函数不能被声明成const
             
