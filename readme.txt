@@ -79,3 +79,16 @@ chapter_6 NOTICE:
 
             /* 函数指针作为形参 */
             虽然函数不能作为参数，但是可以通过函数指针来实现功能
+
+chapter_7:  const成员函数，
+
+chapter_7 NOTICE:
+            /* const成员函数 */
+            // 常量对象、常量对象引用、或指针都只能用常量成员函数
+            // 如果对象只涉及读操作，尽量用常量成员函数
+            string isbn() const{return this->bookNo;}
+            //const的作用是修饰this指针，与一下伪代码等价
+            string isbn(const Sales_data * const this){
+                return this->isbn;
+            }
+            
