@@ -80,7 +80,8 @@ chapter_6 NOTICE:
             /* 函数指针作为形参 */
             虽然函数不能作为参数，但是可以通过函数指针来实现功能
 
-chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义)
+chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义),public和
+            private访问控制; struct和class定义类的区别; 友元函数
 
 chapter_7 NOTICE:
             /* const成员函数 */
@@ -97,3 +98,9 @@ chapter_7 NOTICE:
             2. 默认构造函数
             3. 构造函数不能被声明成const
             
+            /* struct与class */
+            两者都能定义类，但是在第一个访问说明符之前定义的成员
+            属性不同，class是private，struct是public
+
+            /* 友元函数 */
+            声明必须在类里面
