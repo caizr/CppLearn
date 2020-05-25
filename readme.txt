@@ -82,7 +82,7 @@ chapter_6 NOTICE:
 
 chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义),public和
             private访问控制; struct和class定义类的区别; 友元函数;
-            mutable可变数据成员
+            mutable可变数据成员;友元类；委托构造函数(c++11)
 
 chapter_7 NOTICE:
             /* const成员函数 */
@@ -105,3 +105,16 @@ chapter_7 NOTICE:
 
             /* 友元函数 */
             声明必须在类里面
+
+            /* mutable可变数据成员 */
+            如果对象是const型，不可更改里面的成员，除非加上
+            mutable 修饰符，即修改常量成员函数里this->的成员
+
+            /* 友元类 */
+            //只提供友元类某个函数访问权限：
+            //注意需要明确指出该成员属于哪个类
+            class Screen{
+                friend void Window_mgr::clear(xxx);
+            }
+
+            //注意友元函数重载需要列举每一个重载函数
