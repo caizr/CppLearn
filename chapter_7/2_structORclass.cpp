@@ -27,7 +27,7 @@ struct S1{
 };
 
 int main(){
-    C1 o1;
+    C1 const o1;
     S1 o2;
     cout<<o1.Address<<endl; //允许
     //cout<<o1.Age<<endl;   //不允许

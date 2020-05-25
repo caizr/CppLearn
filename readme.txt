@@ -81,7 +81,8 @@ chapter_6 NOTICE:
             虽然函数不能作为参数，但是可以通过函数指针来实现功能
 
 chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义),public和
-            private访问控制; struct和class定义类的区别; 友元函数
+            private访问控制; struct和class定义类的区别; 友元函数;
+            mutable可变数据成员
 
 chapter_7 NOTICE:
             /* const成员函数 */
