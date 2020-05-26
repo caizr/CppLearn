@@ -83,7 +83,7 @@ chapter_6 NOTICE:
 chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义),public和
             private访问控制; struct和class定义类的区别; 友元函数;
             mutable可变数据成员;友元类；委托构造函数(c++11); 隐式转换
-            *静态成员
+            *静态成员；静态成员变量的初始化
 
 chapter_7 NOTICE:
             /* const成员函数 */
@@ -141,3 +141,6 @@ chapter_7 NOTICE:
             必须在类外进行静态成员的初始化！！！！！
             // Bank::rate=0.2,错误
             double Bank::rate=0.5;
+            //一般，静态成员不应该在类内初始化!
+            //如果一定要初始化：：
+            static constexpr int period =30; //类内初始化
