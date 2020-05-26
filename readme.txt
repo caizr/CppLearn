@@ -82,7 +82,8 @@ chapter_6 NOTICE:
 
 chapter_7:  const成员函数，构造函数(初始值列表, 在外部定义),public和
             private访问控制; struct和class定义类的区别; 友元函数;
-            mutable可变数据成员;友元类；委托构造函数(c++11)
+            mutable可变数据成员;友元类；委托构造函数(c++11); 隐式转换
+            *静态成员
 
 chapter_7 NOTICE:
             /* const成员函数 */
@@ -118,3 +119,11 @@ chapter_7 NOTICE:
             }
 
             //注意友元函数重载需要列举每一个重载函数
+
+            /* 隐式构造函数 */
+            explict抑制隐式转换，但仍可以显示转换: Sales_data(null_book)
+
+
+            /* 静态成员 */
+            类内部成员变量用static修饰，说明所有的实例共享这一个变量
+            类内部成员函数用static修饰，不包含this指针！！！！！！
