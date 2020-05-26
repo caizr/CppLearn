@@ -127,3 +127,17 @@ chapter_7 NOTICE:
             /* 静态成员 */
             类内部成员变量用static修饰，说明所有的实例共享这一个变量
             类内部成员函数用static修饰，不包含this指针！！！！！！
+
+            //关于静态成员初始化的问题
+            class Bank{
+                private:
+                    //static double rate=0.5；错误
+                    static double rate;
+                public:
+                    void changeRate(double r){
+                        rate=r;
+                    }
+            }
+            必须在类外进行静态成员的初始化！！！！！
+            // Bank::rate=0.2,错误
+            double Bank::rate=0.5;
