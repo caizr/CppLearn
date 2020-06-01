@@ -144,3 +144,45 @@ chapter_7 NOTICE:
             //一般，静态成员不应该在类内初始化!
             //如果一定要初始化：：
             static constexpr int period =30; //类内初始化
+
+chapter_16:
+            template<typename T,class U>；类模板；类模板与友元
+chapter_16 NOTICE:
+            1. 在模板参数列表中，typename和class含义相同，可以互换
+            2. 模板函数不会生成代码，编译的时候生成，所以如果模板函数
+               里面有错误的时候，只有在实例化是才会发现错误
+            3. 模板成员函数在类外定义的时候，必须有模板参数列表，如：
+                template<class T>
+                void Book<T>::get() {...}
+            4. /* 类模板与友元 */
+                //与所有的类模板为友元关系：
+                //前置声明
+                template<typename T> class BlobPtr;
+                template<typename T> class Blob;
+                template<typename T> class Blob{
+                    //友元类
+                    friend class BlobPtr<T>;
+                    //友元函数
+                    friend bool operator==<T>(const Blob<T>&,const BlobPtr<T>&) 
+                }
+
+                /* 限制类模板中的特性模板类型保持友好关系 */
+                //与特定的的类模板为友元关系：
+                //前置声明
+                template<typename T> class BlobPtr;
+                template<typename T> class Blob;
+                template<typename T> class Blob{
+                    //友元类
+                    friend class BlobPtr<int>;
+                    //友元函数
+                    friend bool operator==<int>(const Blob<T>&,const BlobPtr<T>&) 
+                }
+                /* 令自己的模板为友元 */ (新标准)
+                template<typename T> class Blob{
+                    friend T;
+                }
+                意思就是 Book是 Blod<Book>的友元
+
+            5. 模板类型别名
+                typename Blob<string> strBlob;
+                strBlob就是实例化的模板版本的Blod
