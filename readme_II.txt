@@ -1,5 +1,5 @@
-C8: 
-C8 NOTICE:
+
+
 
 chapter_16:
             template<typename T,class U>；类模板；类模板与友元；类模板静态成员；
