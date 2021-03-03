@@ -63,3 +63,17 @@ chapter_16 NOTICE:
                 template<typename T> int count(const T & );     //只声明不定义
                 /* 定义的时候，定义中的模板参数名字不必与声明的模板参数相同 */
                 template<typename U> int count(const U & c1){ /*... */ } //定义
+
+
+************************************  PART II   ************************************
+
+chapter_9:
+            list,vector,deque,string,array,foward_list容器，以及它们的优缺点；
+            迭代器 iterator, reverse_iterator, const_iterator;
+            迭代器初始化
+chapter_16 NOTICE:
+            1. 对于容器的 == 运算符，会对比容器里面的值，值相等就返回为真
+            2. 迭代器范围： begin end,通过递增begin达到end
+                           rbegin rend是反过来的
+            3. array容器定义方式: array<int,10> a1, array<int,10>和
+               array<int,12>是两种类型

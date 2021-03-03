@@ -5,6 +5,7 @@
             "label": "g++.exe build active file",
             "command": "C:\\MinGW64\\bin\\g++.exe",
             "args": [
+                "-std=c++14",
                 "-g",
                 "${file}",
                 "-o",
