@@ -81,7 +81,11 @@ chapter_8 NOTICE:
 chapter_11: (关联容器)
             map和set，8种类型 map,set,multimap,multiset; unordered_map, unordered_set,
             unordered_multimap, unordered_multiset
-
             map<string,int> variable,  使用for auto c:variable的时候, 那么c.first就是key 
             c.second就是value
+            pair 的成员是public，part<int,int> p, 可直接通过p.first p.second访问
+            
 
+chapter_11 NOTICE:
+            1. vector map 和list的区别
+            2. multimap, multiset
