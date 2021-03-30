@@ -71,9 +71,17 @@ chapter_9:
             list,vector,deque,string,array,foward_list容器，以及它们的优缺点；
             迭代器 iterator, reverse_iterator, const_iterator;
             迭代器初始化
-chapter_16 NOTICE:
+chapter_8 NOTICE:
             1. 对于容器的 == 运算符，会对比容器里面的值，值相等就返回为真
             2. 迭代器范围： begin end,通过递增begin达到end
                            rbegin rend是反过来的
             3. array容器定义方式: array<int,10> a1, array<int,10>和
                array<int,12>是两种类型
+
+chapter_11: (关联容器)
+            map和set，8种类型 map,set,multimap,multiset; unordered_map, unordered_set,
+            unordered_multimap, unordered_multiset
+
+            map<string,int> variable,  使用for auto c:variable的时候, 那么c.first就是key 
+            c.second就是value
+
