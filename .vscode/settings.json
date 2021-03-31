@@ -1,0 +1,11 @@
+{
+    "code-runner.executorMap": {
+    "cpp": "cd $dir && clang++ $fileName -o $fileNameWithoutExt -std=c++14 && $dir$fileNameWithoutExt"
+    },
+    "files.associations": {
+    "typeinfo": "cpp"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    }
+    
