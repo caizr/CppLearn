@@ -1,4 +1,5 @@
-chapter_13: 拷贝构造函数，拷贝赋值运算符，析构函数， =default已经=delete，private阻止拷贝
+chapter_13: 拷贝构造函数，拷贝赋值运算符，析构函数， =default已经=delete，private阻止拷贝，拷贝控制
+            自定义swap
 chapter_13 NOTICE:
             
             /* 拷贝构造函数 */
@@ -45,4 +46,6 @@ chapter_13 NOTICE:
                   如果有const成员，则拷贝赋值运算符是删除的（因为const不可能被
                   赋值）
             /* 拷贝控制 */
-            
+            /* 自定义swap */
+            这里知道swap自定义，交换指针指向的而不用临时变量，但是std::swap那里没懂
+            13.4 13.5 看不懂
