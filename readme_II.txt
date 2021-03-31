@@ -84,8 +84,11 @@ chapter_11: (关联容器)
             map<string,int> variable,  使用for auto c:variable的时候, 那么c.first就是key 
             c.second就是value
             pair 的成员是public，part<int,int> p, 可直接通过p.first p.second访问
-            
+            auto p=variable.insert(a,b) p是pair类型数据，first为迭代器, second为bool，要是
+            之前的容器存在key就返回false 
+            at P388
 
 chapter_11 NOTICE:
             1. vector map 和list的区别
             2. multimap, multiset
+            3. ++variable["key"] 如果存在就++，不存在的话会创建，这就是和vector的区别

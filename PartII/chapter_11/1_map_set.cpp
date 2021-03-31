@@ -10,7 +10,10 @@ int main(){
     for(auto c:test){
         cout<<c.second;
     }
-
+    multimap<string, int> mm;
+    mm.insert({"aa",123});
+    mm.insert({"aa",456});
+    ++test["bs"];
 
     return 0;
 }

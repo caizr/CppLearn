@@ -7,8 +7,8 @@ int main(){
     v.push_back(1);v.push_back(1);v.push_back(2);
     set<int> s(v.begin(),v.end());
     multiset<int> ms(v.begin(),v.end());
-    set<int>:: key_type a;
-    a=3;
+    auto test=s.emplace(2);
+
 
     return 0;
 }
