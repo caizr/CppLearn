@@ -1,5 +1,5 @@
 chapter_13: 拷贝构造函数，拷贝赋值运算符，析构函数， =default已经=delete，private阻止拷贝，拷贝控制
-            自定义swap
+            自定义swap，对象移动
 chapter_13 NOTICE:
             
             /* 拷贝构造函数 */
@@ -49,3 +49,10 @@ chapter_13 NOTICE:
             /* 自定义swap */
             这里知道swap自定义，交换指针指向的而不用临时变量，但是std::swap那里没懂
             13.4 13.5 看不懂
+
+            /* 对象移动 */
+            1. 右值、左值引用：
+                  右值引用 : int && a=4 (yes), int &&a =b (no), int &&a = b*3(yes)
+                            int && a=move(b) (yes)
+            2. 意义：例如vector重新分配内存，从旧内存上面       拷贝到新内存很费时间且不必要，更好
+                    的方式是采用移动

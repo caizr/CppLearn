@@ -7,9 +7,11 @@ private:
     int a;
     int *b;
 public:
-    Hasptr(const int b1=3) {
-        b=new int(b1);
-    }
+    Hasptr(): a(2),b(new int (3))
+    {cout<<"test"<<endl;}
+    // Hasptr(const int b1=3) {
+    //     b=new int(b1);
+    // }
     // Hasptr(const Hasptr&) =delete;
     Hasptr(const Hasptr& a1) { 
         a=a1.a;
@@ -32,7 +34,7 @@ void test(Hasptr a){
 int main(){
     Hasptr o1;
     Hasptr o2=o1;
-
+    
     int a=0;
     Hasptr o3;
     // o3=o1;
