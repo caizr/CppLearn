@@ -56,3 +56,10 @@ chapter_13 NOTICE:
                             int && a=move(b) (yes)
             2. 意义：例如vector重新分配内存，从旧内存上面       拷贝到新内存很费时间且不必要，更好
                     的方式是采用移动
+            3. 使用方式：
+                  Foo (const Foo && a): m1(a.m1), m2(a.m2) {delete a.m1; delete a.m2;}
+
+chapter_15: 
+chapter_15 NOTICE:
+            
+            /* 拷贝构造函数 */
