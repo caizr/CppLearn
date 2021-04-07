@@ -59,7 +59,7 @@ chapter_13 NOTICE:
             3. 使用方式：
                   Foo (const Foo && a): m1(a.m1), m2(a.m2) {delete a.m1; delete a.m2;}
 
-chapter_15: 
+chapter_15: 继承，动态绑定
 chapter_15 NOTICE:
             
             /* 拷贝构造函数 */
